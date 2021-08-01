@@ -1,0 +1,40 @@
+html{
+    min-height: 100%;
+    font-size: 20px;
+    border: 1em outset #B0893B;
+    font-weight: 900;
+    color: #1E1616;
+    background-image: url(../images/raven.png.jpg);
+    background-color: #B17D14;
+    background-size: 100% 100%;
+}
+#poem{
+    text-align: left;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(124deg 44% 93%);
+    text-indent: 40px;
+    line-height: 1.5em;
+       
+}
+
+h1{
+    color: hsl(40deg 86% 69%);
+    text-indent: 150px;
+   
+}
+h2{
+    color: hsl(40deg 32% 15%);
+    text-indent: 220px;
+}
+
+em{
+    text-decoration: underline;
+    text-decoration-color: hsl(38deg 96% 44%);
+    letter-spacing: 2px
+}
+
+#about{
+    border-top: 10px double #B0893B;
+    color: #F4C76C;
+}

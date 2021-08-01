@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Selection form</title>
+</head>
+<body>
+    <h1>Simple Form Controls</h1>
+        <h2>Регистрация</h2>
+        <form action="/test" method="GET">
+           <fieldset>
+               <legend>Лични данни</legend>
+                <label>Име:<input type="text" name="userName" placeholder="малко име, на латиница" autofocus ></label> <br>
+                <label>Име:<input type="text" name="userSurName" placeholder="фамилия, на латиница"></label> <br>
+                <label> Пол: </label>
+                    <label><input type="radio" name="Gender" value="m">Мъж</label>
+                    <label><input type="radio" name="Gender" value="f">Жена</label>
+                </fieldset>
+                <label>Коментар:</label> <br>
+                <textarea name="comments" placeholder="Напишете ни нещо"></textarea> <br>
+                <button type="submit">Изпрати</button>
+           
+        </form>
+</body>
+</html>
