@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Absolute in relative task</title>
+    <style>
+        body{
+            background-color: #888;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: #CCCCCC;
+            margin: 0 auto;
+        }
+        .square{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+        }
+
+        #yellow{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: #FF9;
+        }
+
+        #red{
+            top: 0;
+            left: 0;
+            background-color: #f99;
+        }
+
+        #blue{
+            top: 0;
+            right: 0;
+            background-color: #99F;
+        }
+
+        #green{
+            bottom: 0;
+            right: 0;
+            background-color: #9F9;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <body>
+        <div class="container">
+          <div id="red" class="square">red</div>
+          <div id="blue" class="square">blue</div>
+          <div id="yellow" class="square">yellow</div>
+          <div id="green" class="square">green</div>
+        </div>
+        </body>
+</body>
+</html>

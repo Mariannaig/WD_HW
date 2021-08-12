@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <title>Display property second part</title>
+</head>
+<style>
+    div>a{
+        border: 2px solid aquamarine;
+    }
+    .block>a{
+        display: block;
+        width: 3em;
+        height: 3em;
+    }
+    .inline-block>a{
+        display: inline-block;
+        width: 5em;
+        height: 3em;
+    }
+    .none>a{
+        display: none;
+    }
+</style>
+<body>
+    <h1>CSS свойство: Display</h1>
+    <h2>Дефолтна стойност за линкове: inline:</h2>
+    <div class="inline">
+        <a href="">Линк 1</a>
+        <a href="">Линк 2</a>
+        <a href="">Линк 3</a>
+    </div>
+    <hr>
+
+    <h2>Пример за display="block":</h2>
+    <div class="block">
+        <a href="">Линк 1</a>
+        <a href="">Линк 2</a>
+        <a href="">Линк 3</a>
+    </div>
+    <hr>
+
+    <h2>Пример за display="inline"</h2>
+    <div class="inline">
+        <a href="">Линк 1</a>
+        <a href="">Линк 2</a>
+        <a href="">Линк 3</a>
+    </div>
+    <hr>
+
+    <h2>Пример за display:"inline-block"</h2>
+    <div class="inline-block">
+        <a href="">Линк 1</a>
+        <a href="">Линк 2</a>
+        <a href="">Линк 3</a>
+    </div>
+    <hr>
+
+    <h2>Пример за display:"none"</h2>
+    <div class="none">
+        <a href="">Линк 1</a>
+        <a href="">Линк 2</a>
+        <a href="">Линк 3</a>
+    </div>
+    <hr>
+    
+</body>
+</html>

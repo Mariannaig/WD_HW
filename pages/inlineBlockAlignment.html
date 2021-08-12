@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Inline-blocks</title>
+    <style>
+        .box{
+            height: 5em;
+            width: 5em;
+            display: inline-block;
+        }
+        
+        .red{
+            background: #F99;
+            /* vertical-align:top; */
+        }
+        .blue{
+            background: #99F;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Когато в елементите няма поредово съдържание:</p>
+<div class="box red"></div>
+<div class="box blue"></div>
+<hr>
+<p>Когато в елементите има поредово съдържание с различна височина:</p>
+<div class="box red">RED</div>
+<div class="box blue">BLUE<br>BLUE<br>BLUE</div>
+<hr>
+<p>Когато в елементите има поредово съдържание с еднаква височина:</p>
+<div class="box red">RED</div>
+<div class="box blue">BLUE</div>
+    
+</body>
+</html>

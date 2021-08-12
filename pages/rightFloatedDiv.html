@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Right floated div</title>
+    <style>
+        html,body,p{
+            margin: 0;
+            padding: 0;
+        }
+        
+       .container{           
+           margin: 0 auto;           
+           height: 50vh;
+           width: 50vw;
+           background-color: #CCC;
+           display: inline-block;
+       }
+       .container>.box{
+           width: 50%;
+           height: 50vh;
+           float: right;
+           background-color: #F99;
+           opacity: 0.5;            
+       }
+
+       p{
+           border: 2px solid #99F;
+       }
+      
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box right">Floated Box</div>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis sit sint quam nesciunt quibusdam expedita quisquam inventore est temporibus non natus quia officia voluptatibus, vel assumenda maxime, cum totam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ipsa tempora numquam quas aliquam impedit porro provident rem quisquam ab, modi voluptatum beatae sapiente? Ipsa illo repellendus placeat nobis voluptas.</p>
+    </div>
+    
+</body>
+</html>

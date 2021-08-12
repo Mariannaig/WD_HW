@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Display Property</title>
+    <style>
+        div>p:nth-of-type(1){
+            background-color:#F00;
+        }
+        div>p:nth-of-type(2){
+            background-color:#0F0;
+        }
+        div>p:nth-of-type(3){
+            background-color:#F0F;
+        }
+        
+        .none>p{
+            display: none;
+        }
+        .block>p{
+            display: block;
+            width: 30%;
+        }
+        .inline>p{
+            display: inline;
+            width: 30%;
+        }
+        .inline_block>p{
+            display: inline-block;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="none">    
+        <h2><code>display: none;</code></h2>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+    <div class="block">
+        <h2><code>display: block; width: 30%</code></h2>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+    <div class="inline">
+        <h2><code>display: inline; width: 30%</code></h2>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+    <div class="inline_block">
+        <h2><code>display: inline-block; width: 30%</code></h2>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+</body>
+</html>
