@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Grid with floats & clear</title>
+    <style>
+        .wrapper{
+            border: 2px solid #F99;
+        }
+        .box{
+            float: left;
+            width: 5em;
+	        height: 5em;
+	        margin: .5em;
+	        border: 2px solid #99f;
+        }
+        .clearfix{
+            clear: left;
+            /* clear: both; might be both as well */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="clearfix"></div>
+    </div>
+    <p><b>Task</b>: как би излгеждала страницата, ако нямахме .clear елемент след последния floated .box?</p>
+    
+</body>
+</html>

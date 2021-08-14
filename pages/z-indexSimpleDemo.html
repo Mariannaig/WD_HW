@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Z-index simple demo</title>
+    <style>        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .z1, .z3{
+            z-index: 1;
+        }
+
+        .z1{
+            background-color: #F999;
+            position: relative;            
+        }
+
+        .z2{
+            background-color: #9F9c;
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+        .z3{
+            background-color: #99F9;
+            position: relative;
+            top: -100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Task</b>: set the green block behind all other blocks with just one keystroke edit on CSS</p>
+    <div class="box z1">one (z-index=1)</div>
+    <div class="box z2">two (z-index=2)</div>
+    <div class="box z3">three (z-index=3)</div>
+
+    
+</body>
+</html>

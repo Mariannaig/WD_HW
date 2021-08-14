@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Classic page layout</title>
+    <style>
+        body{
+            margin: 0;
+            font-size: 20px;
+            color: #FFF;
+        }
+        
+          .box{
+              width: 700px;
+              background-color: #FDAFB1;
+              border: 15px solid #FDAFB1 ;
+              margin: 0 auto;
+              text-align: center;
+          } 
+          #header, #footer{				
+            background-color: #98D1C7;
+            text-align: center;
+            line-height: 2em;
+            text-align: center;
+          } 
+
+          #aside, #article{
+            display: inline-block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+          }
+
+          #aside{            
+            width: 30%;
+			height: 70vh;
+            margin-right: 1em;
+            line-height: 70vh;
+            background-color: #62B7B6;
+          }
+          
+          #article{
+            display: inline-block;
+            position: relative;            
+            width: 60%;
+            height: 100%;
+			line-height: 70vh;
+            background-color: #FA7A7B;
+              
+          }
+          #article> .img{
+            display: inline-block;
+            position: absolute;
+            bottom: 15px;
+            line-height: 6em;
+            width: 28%;
+            height: 25%;            
+            background-color: #D6D5D5;
+          }
+          .left{
+              left: 15px;
+          }
+
+          .middle{
+              right: 7.5em;
+          }
+
+          .right{
+              right: 15px;
+          }
+          
+          #footer{
+              position: relative;
+              bottom: 0;
+              left: 0;
+              right: 0;
+          }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="header">Header</div>
+        <div id="aside">Aside</div>
+        <div id="article">Article
+            <div class="img left">image</div>
+            <div class="img middle">image</div>
+            <div class="img right">image</div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Z-index in parent-child relation</title>
+    <style>
+      
+        body{            
+            margin: 0;
+        }
+        .parent{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: #f999;
+            /* z-index: 2; не работи, само когато зададем -1 на детето */
+        }
+        .child{
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 80px;
+            width: 80px;
+            background-color: #99f;
+            z-index: -1;          
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">child</div>	
+    </div>
+    
+</body>
+</html>
