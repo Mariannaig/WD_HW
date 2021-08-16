@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Hover examples</title>
+    <style>
+
+        #parent{
+            width: 20em;
+            height: 20em;
+            background-color: #F00;
+        }
+
+        #child{
+            width: 50%;
+            height: 50%;
+            background-color: #00F;
+        }
+        #parent:hover>#child{
+            background-color: #0F0;
+        }
+
+        #previous{
+            width: 20em;
+            height: 20em;
+            background-color: #F00;
+        }
+
+        #sibling{
+            width: 20em;
+            height: 20em;
+            background-color: #00F;
+        }
+
+        #hoverOnSibling>#previous:hover+#sibling{
+            background-color: #0F0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover Examples</h1>
+    <section id="hoverOnParent">
+        <h2>Select child while hover on Parent</h2>
+        <div id="parent">
+            <div id="child"></div>
+        </div>
+    </section>
+
+    <section id="hoverOnSibling">
+        <h2>Select sibling while hover on previous node</h2>
+        <div id="previous"></div>
+        <div id="sibling"></div>
+    </section>
+    
+</body>
+</html>

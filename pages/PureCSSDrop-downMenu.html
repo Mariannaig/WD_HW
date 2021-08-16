@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>CSS based drop-down menu</title>
+    <style>
+        
+       body{
+           margin: 0;
+        }
+               
+        .menu{                
+            height: fit-content;
+            width: 70%;                           
+            text-align: center;  
+            margin: 0 auto;                        
+                                                              
+        }
+
+        .sub-menu{
+            position: relative; 
+            display: inline-block;
+            width: 30%;
+            height: fit-content;                              
+            text-align: center;
+            vertical-align: top;
+            margin-right: -.3em;                                                             
+        }
+
+        .head{
+            font-weight: bold;
+            height: 3em;
+            line-height: 3em;
+            vertical-align: middle;
+            color: #FFF;
+            background-color: #555;
+            border: 1px solid #FFF;            
+        }
+
+        p{
+            position: absolute;
+            top: 12em;
+        }
+
+        .head>div{            
+            line-height: 2em;
+            font-weight: normal;
+            text-align: left;
+            display: none;
+            background-color: #F88;
+            color: #000;
+        }
+
+        .head:hover>div{
+            display: block;
+        }
+
+        .head>div:hover{
+            font-weight: bold;
+        }
+               
+    </style>
+</head>
+<body>
+    
+    <div class="menu">
+        
+        <div class="sub-menu">
+            <div class="head">Супи
+                <div>Таратор</div>
+                <div>Френска супа</div>
+            </div>
+        </div>                
+         
+        <div class="sub-menu">
+            <div class="head">Основно                
+                <div>Мусака</div>
+                <div>Пълнени чушки</div>
+                <div>Пиле с броколи и сметана</div> 
+            </div>
+        </div>
+            
+        <div class="sub-menu">
+            <div class="head">Десерти            
+                <div>Палачинки</div>
+                <div>Крем карамел</div>
+            </div>
+        </div>   
+
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint omnis porro, iusto saepe culpa. Eum aperiam molestiae velit ab explicabo quos itaque veritatis, quisquam quidem omnis, ad provident! Explicabo.</p>
+    
+</body>
+</html>
