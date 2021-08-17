@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>Styling radio inputs</title>
+    <style>
+        label{
+            display: inline-block;            
+        }
+        input[type="radio"]{
+            display: none;                   
+        }
+
+        label>div{
+            width: 1em;
+            height: 1em;
+            background-color: #777;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        input[type="radio"]:hover~div{
+            background-color: #F007;
+            border: 1px solid #000;
+        }
+
+        input[type="radio"]:checked~div{
+            background-color: #F00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Custom styling of radio inputs</h1>
+    <p>We hide the <code>input[type="radio"]</code> elements and replace them with divs.</p>
+    <p>We have to use the <code>:checked</code> pseudo-class</p>
+    <form action="/test" method="get">
+        <fieldset>
+            <legend>Gender</legend>
+            <label>male: <input type="radio" name="gender" value="male"><div class="input"></div></label>
+            <label>female: <input type="radio" name="gender" value="female"><div class="input"></div></label>
+            <label>other: <input type="radio" name="gender" value="other"><div class="input"></div></label>
+        </fieldset>
+        <button type="submit">Ok</button>
+    </form>
+</body>
+</html>

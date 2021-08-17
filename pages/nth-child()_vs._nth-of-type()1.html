@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>:nth-child() vs. :nth-of-type</title>
+    <style>
+
+        .nth_child_example, .nth_of_type_example{
+            border: 1px solid #000;
+        }
+        .nth_child_example>p:nth-child(3){
+            background-color: #F00;
+        }
+
+        .nth_of_type_example>p:nth-of-type(3){
+            background-color: #F00;
+        }
+    </style>
+</head>
+<body>
+    <h1>nth-child() vs. nth-of-type()</h1>
+    <h2>nth-child() example: <code>set background to p:nth-child(3)</code></h2>
+        <div class="nth_child_example">
+            <p>Paragraph 1 (child 1)</p>
+            <div>Div 1 (child 2)</div>
+            <p>Paragraph 2 (child 3)</p>
+            <div>Div 2 (child 4)</div>
+            <p>Paragraph 3 (child 5)</p>	
+        </div>
+
+    <h2>nth-of-type() example: <code>set background to p:nth-of-type(3)</code></h2>
+        <div class="nth_of_type_example">
+            <p>Paragraph 1 (child 1)</p>
+            <div>Div 1 (child 2)</div>
+            <p>Paragraph 2 (child 3)</p>
+            <div>Div 2 (child 4)</div>
+            <p>Paragraph 3 (child 5)</p>
+        </div>
+    
+</body>
+</html>

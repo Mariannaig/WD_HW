@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>:nth-of-type(an+b)</title>
+    <style>
+        .wrapper>p:nth-of-type(2n+1){
+            color: #0F0;
+        }
+
+        .wrapper>p:nth-of-type(2n){
+            color: #00F;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p>Paragraph 1 (child 1)</p>
+        <p>Paragraph 2 (child 2)</p>
+        <div>Div 1 (child 3)</div>
+        <p>Paragraph 3 (child 4)</p>
+        <p>Paragraph 4 (child 5)</p>
+        <div>Div 2 (child 6)</div>
+    </div>
+</body>
+</html>

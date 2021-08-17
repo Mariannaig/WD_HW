@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <title>:nth-child() vs. :nth-of-type example 2</title>
+    <style>
+        .nthChild>p:nth-child(3){
+            color: #F00;
+        }
+
+        .nthOfType>p:nth-of-type(3){
+            color: #F00;
+        }
+    </style>
+</head>
+<body>
+    <section class="nthChild">
+        <h2>nth-child example. Rule used: <code style="color: #830303">p:nth-child(3){color: red;}</code></h2>
+        <a href="http://progressbg.net/">Компютърно образователен център „Прогрес“</a>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+       </section>
+    <section class="nthOfType">
+        <h2>nth-of-type example. Rule used: <code style="color: #830303">p:nth-of-type(3){color: red;}</code></h2>
+        <a href="http://progressbg.net/">Компютърно образователен център „Прогрес“</a>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </section>
+</body>
+</html>
